@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Page with Sidebar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        .header {
+            background-color: #3b5998;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            width: 250px;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-right: 20px;
+        }
+
+        .sidebar h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .sidebar ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            flex-grow: 1;
+        }
+
+        .post {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 15px;
+        }
+
+        .post img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .post .caption {
+            padding: 10px 0;
+            font-size: 16px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .grid-item {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .grid-item .caption {
+            padding: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Social Media Feed
+    </div>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Your Profile</h2>
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" style="border-radius: 50%; width: 100%;">
+            <p><strong>Username</strong></p>
+            <p>Bio: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Your Posts</a></li>
+                <li><a href="#">Messages</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Example of a Single Post -->
+            <div class="post">
+                <img src="https://via.placeholder.com/800x400" alt="Post Image">
+                <div class="caption">This is a post caption!</div>
+            </div>
+
+            <!-- Grid of Images (like Instagram) -->
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/600x400" alt="Image 1">
+                    <div class="caption">Image 1 Caption</div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/600x400" alt="Image 2">
+                    <div class="caption">Image 2 Caption</div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/600x400" alt="Image 3">
+                    <div class="caption">Image 3 Caption</div>
+                </div>
+                <div class="grid-item">
+                    <img src="https://via.placeholder.com/600x400" alt="Image 4">
+                    <div class="caption">Image 4 Caption</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
