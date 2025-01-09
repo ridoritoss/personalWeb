@@ -17,12 +17,11 @@ import Image from 'next/image';
 const projects = [
     {
         num: "01",
-        title: "Project 1",
+        title: "Karsaku",
         category: "frontend",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium adipisci cum debitis officiis accusamus. Unde perspiciatis fuga, placeat nisi iusto ad delectus deserunt accusamus voluptatem! Saepe nihil optio vitae possimus.",
         stack: [
-            { name: "React" },
-            { name: "Tailwind" },
+            { name: "React Native" },
             { name: "Next.js" },
         ],
         image: "/assets/MyProject/tes_web.jpg"
@@ -30,7 +29,7 @@ const projects = [
     {
         num: "02",
         title: "Project 2",
-        category: "backend",
+        category: "frontend",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium adipisci cum debitis officiis accusamus. Unde perspiciatis fuga, placeat nisi iusto ad delectus deserunt accusamus voluptatem! Saepe nihil optio vitae possimus.",
         stack: [
             { name: "Node.js" },
@@ -66,7 +65,7 @@ const projects = [
     {
         num: "05",
         title: "Project 5",
-        category: "backend",
+        category: "frontend",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium adipisci cum debitis officiis accusamus. Unde perspiciatis fuga, placeat nisi iusto ad delectus deserunt accusamus voluptatem! Saepe nihil optio vitae possimus.",
         stack: [
             { name: "Node.js" },
@@ -111,8 +110,12 @@ const Projects = () => {
                         <div className='flex flex-col gap-[30px] h-[50%]'>
                             {/* outine */}
                             <div className='text-8xl leading-none font-extrabold text-transparent text-outline'>{project.num}</div>
-                            {/* category */}
-                            <h2 className='text-[42px] font-bold leading-none hover:text-accent transition-all duration-500 capitalize'>{project.category} project</h2>
+                            <div>
+                                {/* title */}
+                                <h2 className='text-[42px] font-bold leading-none hover:text-accent transition-all duration-500 capitalize'>{project.title}</h2>
+                                {/* category */}
+                                <span className='leading-none capitalize'>{project.category} project</span>
+                            </div>
                             {/* desc */}
                             <p className='text-primary/70'>{project.description}</p>
                             {/* stack */}
