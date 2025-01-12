@@ -16,7 +16,7 @@ const PageTransition = ({ children }) => {
         <motion.div
           key={pathname}
           initial={{ opacity: 1 }}
-          animate={{ opacity: 0, transition: { duration: 0.4, delay: 2.4, ease: "easeInOut"} }}
+          animate={{ opacity: 0, transition: { duration: 0.4, delay: 3, ease: "easeInOut"} }}
           exit={{ opacity: 0 }}
           className="h-screen w-screen fixed bg-primary top-0 pointer-events-none z-50"
           onAnimationComplete={() => setIsAnimating(false)} // Deteksi animasi selesai

@@ -19,72 +19,56 @@ const projects = [
         num: "01",
         title: "Karsaku",
         category: "frontend",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium adipisci cum debitis officiis accusamus. Unde perspiciatis fuga, placeat nisi iusto ad delectus deserunt accusamus voluptatem! Saepe nihil optio vitae possimus.",
+        description: "A mobile app designed to guide users toward healthy living through personalized plans, stress monitoring, and relaxation tips-helping you achieve a happier and more balanced life.",
         stack: [
             { name: "React Native" },
             { name: "Next.js" },
         ],
-        image: "/assets/MyProject/tes_web.jpg"
+        image: "/assets/MyProject/karsaku.png",
+        github: "https://github.com/Hacktiv8-Karsaku",
+        page: "https://expo.dev/preview/update?message=Merge%20branch%20%27development%27&updateRuntimeVersion=1.0.0&createdAt=2024-12-12T01%3A13%3A56.063Z&slug=exp&projectId=05079de3-cb8a-4c0a-80fb-7c06da78b633&group=42a3c95f-86f0-47f4-a2a1-5e2ddee4d706"
     },
     {
         num: "02",
-        title: "Project 2",
-        category: "frontend",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium adipisci cum debitis officiis accusamus. Unde perspiciatis fuga, placeat nisi iusto ad delectus deserunt accusamus voluptatem! Saepe nihil optio vitae possimus.",
+        title: "Vulp+",
+        category: "fullstack",
+        description: "A website that specializes in the merchant top-up sector, making it easier for gamers to purchase in-game currency.",
         stack: [
             { name: "Node.js" },
             { name: "Express" },
             { name: "MongoDB" },
         ],
-        image: "/assets/MyProject/tes_web2.png"
+        image: "/assets/MyProject/Vulp-web.png",
+        github: "https://github.com/ridoritoss/ip-ridoritoss/tree/dev",
+        page: "https://vulp-plus-99b5f.web.app/login"
     },
     {
         num: "03",
-        title: "Project 3",
+        title: "Rizz N Dizz",
         category: "fullstack",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium adipisci cum debitis officiis accusamus. Unde perspiciatis fuga, placeat nisi iusto ad delectus deserunt accusamus voluptatem! Saepe nihil optio vitae possimus.",
+        description: "Rizz N Dizz is a cutting-edge apparel brand inspired by the bold and playful style of Rip N Dip, offering unique and creative designs that blend streetwear culture with a touch of humor and individuality.",
         stack: [
             { name: "React" },
             { name: "Tailwind" },
             { name: "Next.js" },
         ],
-        image: "/assets/MyProject/tes_web.jpg"
+        image: "/assets/MyProject/rizzndizz.png",
+        github: "https://github.com/H8-FSJS-P3S5/gc02-ridoritoss",
+        page: "https://rizzndizz.vercel.app/"
     },
     {
         num: "04",
-        title: "Project 4",
+        title: "Banter Social Media",
         category: "frontend",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium adipisci cum debitis officiis accusamus. Unde perspiciatis fuga, placeat nisi iusto ad delectus deserunt accusamus voluptatem! Saepe nihil optio vitae possimus.",
+        description: "Banter is a dynamic social media platform designed to spark meaningful conversations, connect communities, and inspire authentic interactions in a vibrant digital space.",
         stack: [
             { name: "React" },
             { name: "Tailwind" },
             { name: "Next.js" },
         ],
-        image: "/assets/MyProject/tes_web2.png"
-    },
-    {
-        num: "05",
-        title: "Project 5",
-        category: "frontend",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium adipisci cum debitis officiis accusamus. Unde perspiciatis fuga, placeat nisi iusto ad delectus deserunt accusamus voluptatem! Saepe nihil optio vitae possimus.",
-        stack: [
-            { name: "Node.js" },
-            { name: "Express" },
-            { name: "MongoDB" },
-        ],
-        image: "/assets/MyProject/tes_web.jpg"
-    },
-    {
-        num: "06",
-        title: "Project 6",
-        category: "fullstack",
-        description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium adipisci cum debitis officiis accusamus. Unde perspiciatis fuga, placeat nisi iusto ad delectus deserunt accusamus voluptatem! Saepe nihil optio vitae possimus.",
-        stack: [
-            { name: "React" },
-            { name: "Tailwind" },
-            { name: "Next.js" },
-        ],
-        image: "/assets/MyProject/tes_web2.png"
+        image: "/assets/MyProject/banter-socmed.png",
+        github: "https://github.com/AbdulRidhoRamadhan/banter-Social-Media",
+        page: ""
     },
 ]
 
@@ -133,7 +117,7 @@ const Projects = () => {
                             {/* button */}
                             <div className='flex items-center gap-4'>
                                 {/* web */}
-                                <Link href='' as={`/projects/${project.title}`}>
+                                <Link href='' as={project.page}>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-primary/30 flex justify-center items-center group'>
@@ -146,7 +130,7 @@ const Projects = () => {
                                     </TooltipProvider>
                                 </Link>
                                 {/* github repo */}
-                                <Link href='' as={`/projects/${project.title}`}>
+                                <Link href='' as={project.github}>
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className='w-[70px] h-[70px] rounded-full bg-primary/30 flex justify-center items-center group'>
@@ -173,10 +157,10 @@ const Projects = () => {
                                     <SwiperSlide key={index} className='w-full'>
                                         <div className='h-[460px] relative group flex justify-center items-center bg-primary/30'>
                                             {/* overlay */}
-                                            <div className='absolute top-0 bottom-0 w-full bg-primary/30 z-10'></div>
+                                            <div className='absolute top-0 bottom-0 w-full '></div>
                                             {/* image */}
-                                            <div className='relative w-full h-full'>
-                                                <Image src={projects.image} fill className='object-cover' alt='' />
+                                            <div className='relative w-full h-[400px]'>
+                                                <Image src={projects.image} fill className='object-cover' alt={projects.title} />
                                             </div>
                                         </div>
                                     </ SwiperSlide>

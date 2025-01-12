@@ -5,6 +5,7 @@ import { FiDownload } from "react-icons/fi";
 import Socials from "@/components/Socials";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Photo from "@/components/Photo";
 
 const roles = [
   "Junior Software Engineer",
@@ -65,12 +66,12 @@ const Home = () => {
 
   // Handle animation completion
   const handleAnimationComplete = () => {
-    setTimeout(() => setIsAnimationDone(true), 1000); // Add a delay if needed
+    setTimeout(() => setIsAnimationDone(true), 1000);
   };
 
   return (
     <section className="h-full">
-      <div className="container mx-auto">
+      <div className="container mx-auto flex flex-col xl:flex-row items-center justify-between h-full py-16">
         {/* Animation Wrapper */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -109,29 +110,6 @@ const Home = () => {
                   <span className="text-transparent"></span>
                 </h1>
 
-                <style jsx>{`
-                  .typewriter-container {
-                    position: relative;
-                    display: inline-block;
-                  }
-
-                  .typewriter-cursor {
-                    display: inline-block;
-                    margin-left: 2px;
-                    animation: blink 1s step-end infinite;
-                  }
-
-                  @keyframes blink {
-                    0%,
-                    100% {
-                      opacity: 1;
-                    }
-                    50% {
-                      opacity: 0;
-                    }
-                  }
-                `}</style>
-
                 <p className="max-w-[500px] mb-9">
                   I'm student at an Islamic boarding school who loves to play games with a passion for learning
                   programming, especially in web and mobile app development. Interested to trying something new that
@@ -157,6 +135,10 @@ const Home = () => {
             </motion.div>
           )}
         </motion.div>
+        {/* Image */}
+        <div>
+          <Photo />
+        </div>
       </div>
     </section>
   );
