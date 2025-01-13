@@ -8,13 +8,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Photo from "@/components/Photo";
 import Link from "next/link";
 
-const roles = [
-  "Junior Software Engineer",
-  "Junior Frontend Developer",
-  "Junior UI/UX Designer",
-];
+const roles = ["Junior Software Engineer", "Junior Frontend Developer", "Junior UI/UX Designer"];
 
-// Custom typewriter
 const useTypewriter = (words) => {
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
@@ -53,11 +48,10 @@ const useTypewriter = (words) => {
 
 const Home = () => {
   const [currentRole, setCurrentRole] = useState(0);
-  const [isAnimationDone, setIsAnimationDone] = useState(false); // Track animation completion
+  const [isAnimationDone, setIsAnimationDone] = useState(false);
   const names = ["Alfi Ridha M", "ridoritoss"];
   const typedText = useTypewriter(names);
 
-  // Change role every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentRole((prev) => (prev + 1) % roles.length);
@@ -65,15 +59,11 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
 
-  // Handle animation completion
-  const handleAnimationComplete = () => {
-    setTimeout(() => setIsAnimationDone(true), 1000);
-  };
+  const handleAnimationComplete = () => setIsAnimationDone(true);
 
   return (
     <section className="h-full">
       <div className="container mx-auto flex flex-col xl:flex-row items-center justify-between h-full py-16">
-        {/* Animation Wrapper */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -86,36 +76,34 @@ const Home = () => {
               animate={{ opacity: 1, transition: { delay: 1, duration: 0.6, ease: "easeOut" } }}
               className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24"
             >
-              {/* Animated Role */}
               <div className="text-center xl:text-left">
-                <AnimatePresence mode="wait">
-                  <motion.span
-                    key={roles[currentRole]}
-                    className="text-xl"
-                    initial={{ opacity: 0 }}
-                    animate={{
-                      opacity: 1,
-                      rotateX: 0,
-                      transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
-                    }}
-                  >
-                    {roles[currentRole]}
-                  </motion.span>
-                </AnimatePresence>
+                <div className="h-[40px] overflow-hidden relative">
+                  <AnimatePresence mode="wait">
+                    <motion.span
+                      key={roles[currentRole]}
+                      className="text-xl absolute"
+                      initial={{ opacity: 0, y: 30 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -30 }}
+                      transition={{ duration: 0.5, ease: "easeInOut" }}
+                    >
+                      {roles[currentRole]}
+                    </motion.span>
+                  </AnimatePresence>
+                </div>
+
                 <h1 className="h1 mb-6">
                   Hello, I'm<br />
                   <span className="text-accent typewriter-container">
                     {typedText}
                     <span className="typewriter-cursor">|</span>
                   </span>
-                  <span className="text-transparent"></span>
                 </h1>
-
                 <p className="max-w-[500px] mb-9">
-                Hi there! Welcome to my portfolio. I’m passionate about building beautiful and functional web experiences. Feel free to explore and let’s connect!
+                  Hi there! Welcome to my portfolio. I’m passionate about building beautiful and
+                  functional web experiences. Feel free to explore and let’s connect!
                 </p>
 
-                {/* Button and Socials */}
                 <div className="flex flex-col xl:flex-row items-center gap-8">
                   <Button
                     variant="outline"
@@ -144,7 +132,6 @@ const Home = () => {
             </motion.div>
           )}
         </motion.div>
-        {/* Image */}
         <div>
           <Photo />
         </div>

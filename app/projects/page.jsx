@@ -110,7 +110,9 @@ const Projects = () => {
                     <div className='w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none'>
                         <div className='flex flex-col gap-[30px] h-[50%]'>
                             {/* outine */}
-                            <div className='text-8xl leading-none font-extrabold text-transparent text-outline dark:text-white'>{project.num}</div>
+                            <div className='text-8xl leading-none font-extrabold text-transparent text-outline dark:text-white dark:text-opacity-90'>
+                                {project.num}
+                            </div>
                             <div>
                                 {/* title */}
                                 <h2 className='text-[42px] font-bold leading-none hover:text-accent transition-all duration-500 capitalize'>{project.title}</h2>
