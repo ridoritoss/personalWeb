@@ -81,7 +81,7 @@ const Home = () => {
                   <AnimatePresence mode="wait">
                     <motion.span
                       key={roles[currentRole]}
-                      className="text-xl absolute"
+                      className="text-xl"
                       initial={{ opacity: 0, y: 30 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: -30 }}
