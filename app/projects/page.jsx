@@ -23,6 +23,13 @@ const projects = [
         stack: [
             { name: "React Native" },
             { name: "Next.js" },
+            { name: "Expo" },
+            { name: "Open AI" },
+            { name: "Apollo Client" },
+            { name: "Apollo Server" },
+            { name: "MongoDB" },
+            { name: "GraphQL" },
+            { name: "AWS" },
         ],
         image: "/assets/MyProject/karsaku.png",
         github: "https://github.com/Hacktiv8-Karsaku",
@@ -34,9 +41,15 @@ const projects = [
         category: "fullstack",
         description: "A website that specializes in the merchant top-up sector, making it easier for gamers to purchase in-game currency.",
         stack: [
-            { name: "Node.js" },
-            { name: "Express" },
-            { name: "MongoDB" },
+            { name: "Javascript" },
+            { name: "ReactJS" },
+            { name: "ExpressJS" },
+            { name: "PostgresSQL" },
+            { name: "Socket.io" },
+            { name: "Jest" },
+            { name: "AWS" },
+            { name: "Google OAuth" },
+            { name: "Gemini AI" },
         ],
         image: "/assets/MyProject/Vulp-web.png",
         github: "https://github.com/ridoritoss/ip-ridoritoss/tree/dev",
@@ -48,9 +61,12 @@ const projects = [
         category: "fullstack",
         description: "Rizz N Dizz is a cutting-edge apparel brand inspired by the bold and playful style of Rip N Dip, offering unique and creative designs that blend streetwear culture with a touch of humor and individuality.",
         stack: [
-            { name: "React" },
-            { name: "Tailwind" },
+            { name: "Typescript" },
             { name: "Next.js" },
+            { name: "MongoDB" },
+            { name: "Apollo Client" },
+            { name: "Apollo Server" },
+            { name: "Vercel" },
         ],
         image: "/assets/MyProject/rizzndizz.png",
         github: "https://github.com/H8-FSJS-P3S5/gc02-ridoritoss",
@@ -62,9 +78,10 @@ const projects = [
         category: "frontend",
         description: "Banter is a dynamic social media platform designed to spark meaningful conversations, connect communities, and inspire authentic interactions in a vibrant digital space.",
         stack: [
-            { name: "React" },
+            { name: "Javascript" },
             { name: "Tailwind" },
-            { name: "Next.js" },
+            { name: "NodeJS" },
+            { name: "Sequilize" },
         ],
         image: "/assets/MyProject/banter-socmed.png",
         github: "https://github.com/AbdulRidhoRamadhan/banter-Social-Media",
@@ -103,16 +120,18 @@ const Projects = () => {
                             {/* desc */}
                             <p className='text-primary/70'>{project.description}</p>
                             {/* stack */}
-                            <ul className='flex gap-4'>
-                                {project.stack.map((item, index) => {
-                                    return (
-                                        <li key={index} className='text-accent text-xl'>
-                                            {item.name}
-                                            {index !== project.stack.length - 1 && ","}
-                                        </li>
-                                    )
-                                })}
-                            </ul>
+                            <div>
+                                <ul className='flex flex-wrap gap-2'>
+                                    {project.stack.map((item, index) => {
+                                        return (
+                                            <li key={index} className='text-accent'>
+                                                {item.name}
+                                                {index !== project.stack.length - 1 && ","}
+                                            </li>
+                                        )
+                                    })}
+                                </ul>
+                            </div>
                             <div className='border border-primary/40'></div>
                             {/* button */}
                             <div className='flex items-center gap-4'>

@@ -6,6 +6,7 @@ import Socials from "@/components/Socials";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Photo from "@/components/Photo";
+import Link from "next/link";
 
 const roles = [
   "Junior Software Engineer",
@@ -111,22 +112,30 @@ const Home = () => {
                 </h1>
 
                 <p className="max-w-[500px] mb-9">
-                  I'm student at an Islamic boarding school who loves to play games with a passion for learning
-                  programming, especially in web and mobile app development. Interested to trying something new that
-                  is far different from the field that was previously mastered. Starting my programming journey by
-                  completing the Hacktiv8 bootcamp as a full-stack web developer, but not leaving my previous career
-                  as a graduate of an Islamic boarding school.
+                Hi there! Welcome to my portfolio. I’m passionate about building beautiful and functional web experiences. Feel free to explore and let’s connect!
                 </p>
 
                 {/* Button and Socials */}
                 <div className="flex flex-col xl:flex-row items-center gap-8">
-                  <Button variant="outline" size="lg" className="uppercase flex items-center gap-2">
-                    Download CV
-                    <FiDownload />
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    asChild
+                    className="uppercase flex items-center gap-2"
+                  >
+                    <Link
+                      href="/assets/Home/AlfiRidha_CV.pdf"
+                      download="AlfiRidha_CV.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Download CV
+                      <FiDownload className="text-xl" />
+                    </Link>
                   </Button>
                   <div className="mb-8 xl:mb-0">
                     <Socials
-                      containerStyle="flex gap-8"
+                      containerStyle="flex gap-6"
                       iconStyle="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-white hover:transition-all duration-500"
                     />
                   </div>

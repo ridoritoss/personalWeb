@@ -194,7 +194,7 @@ const Resume = () => {
                 >
                     <div className="flex flex-col gap-4 mx-auto my-4">
                         <h1 className="text-5xl font-semibold ">Why Hire Me?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima, necessitatibus?</p>
+                        <p>Your goals are my priority—let’s build impactful web solutions together.</p>
                         {/* Tabs List */}
                         <TabsList className="flex flex-col w-full h-64 max-w-[400px] mx-auto xl:mx-0 gap-4 shrink-0">
                             <TabsTrigger value="about">About Me</TabsTrigger>
