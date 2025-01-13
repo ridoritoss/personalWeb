@@ -10,17 +10,23 @@ const Photo = () => {
                 initial={{ opacity: 0 }}
                 animate={{
                     opacity: 1,
-                    transition: { delay: 3, duration: 0.4, ease: "easeIn" }
+                    transition: { delay: 3, duration: 0.4, ease: "easeIn" },
                 }}
             >
-                <div className="w[298px] h-[298px] xl:w-[498px] xl:h-[498px]">
-                    <Image src="/assets/Home/meme.jpg"
-                        quality={100} fill
+                <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] relative">
+                    <Image
+                        src="/assets/Home/meme.jpg"
+                        quality={100}
+                        fill
+                        priority
                         alt="eVERYTHING iS uNDER cONTROL, i thINK sO?"
-                        className="object-contain" />
+                        className="object-contain"
+                    />
                 </div>
             </motion.div>
         </div>
+
+
     )
 };
 
