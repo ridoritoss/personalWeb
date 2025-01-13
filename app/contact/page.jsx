@@ -124,7 +124,7 @@ const Contact = () => {
                     <div className="w-full">
                         <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-10 bg-slate-100 rounded-xl">
                             <h3 className="text-4xl text-accent">Let's Connect!</h3>
-                            <p className="text-primary/70">
+                            <p className="text-primary/70 dark:text-white">
                             Let’s build something amazing together! Whether it’s a website or a front-end project, I’m here to bring your ideas to life.
                             </p>
 
@@ -218,8 +218,8 @@ const Contact = () => {
                                 <div key={index} className="flex items-center gap-x-4">
                                     <div className="text-2xl text-accent">{item.icon}</div>
                                     <div>
-                                        <h3 className="text-primary/70">{item.title}</h3>
-                                        <p className="text-xl text-primary">{item.value}</p>
+                                        <h3 className="text-primary/70 dark:text-white">{item.title}</h3>
+                                        <p className="text-xl text-primary dark:text-white">{item.value}</p>
                                     </div>
                                 </div>
                             ))}

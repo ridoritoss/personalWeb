@@ -43,7 +43,7 @@ const Services = () => {
                             {/* num n icon */}
                             <div className="w-full flex justify-between items-center">
                                 <div className="font-extrabold text-5xl text-outline 
-                                text-transparent group-hover:text-outline-hover transition-all duration-500">
+                                text-transparent group-hover:text-outline-hover transition-all duration-500 dark:text-white">
                                     {service.num}
                                 </div>
                                 <Link
