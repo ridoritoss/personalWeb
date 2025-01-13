@@ -166,7 +166,7 @@ const certificates = {
             name: 'SQL Certificate',
             issuer: 'HackerRank',
             duration: 'November 2022',
-            image: "/assets/Certificate/SQl.png"
+            image: "/assets/Certificate/SQL.png"
         },
         {
             name: 'React Certificate',

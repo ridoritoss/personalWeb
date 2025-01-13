@@ -125,7 +125,7 @@ const Home = () => {
                   >
                     <Link
                       href="/assets/Home/AlfiRidha_CV.pdf"
-                      download="AlfiRidha_CV.pdf"
+                      download="AlfiRidhaCV.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

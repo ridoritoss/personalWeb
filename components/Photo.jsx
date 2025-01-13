@@ -14,7 +14,7 @@ const Photo = () => {
             }}
             >
                 <div className="w[298px] h-[298px] xl:w-[498px] xl:h-[498px]">
-                    <Image src="/assets/Home/underCTRL.jpg" quality={100} fill
+                    <Image src="/assets/Home/undercontrol.jpg" quality={100} fill
                         alt="eVERYTHING iS uNDER cONTROL, i thINK sO?"
                         className="object-contain" />
                 </div>
