@@ -166,7 +166,7 @@ const Projects = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='w-full xl:w-[50%]'>
+                    <div className='w-full xl:w-[55%]'>
                         <Swiper
                             spaceBetween={30}
                             slidesPerView={1}
@@ -176,11 +176,11 @@ const Projects = () => {
                             {projects.map((projects, index) => {
                                 return (
                                     <SwiperSlide key={index} className='w-full'>
-                                        <div className='h-[460px] relative group flex justify-center items-center bg-primary/30'>
+                                        <div className='h-[460px] relative group flex justify-center items-center xl:bg-primary/30'>
                                             {/* overlay */}
                                             <div className='absolute top-0 bottom-0 w-full '></div>
                                             {/* image */}
-                                            <div className='relative w-full h-[400px]'>
+                                            <div className='relative w-full h-[300px] xl:w-full xl:h-[460px]'>
                                                 <Image src={projects.image} fill className='object-cover' alt={projects.title} />
                                             </div>
                                         </div>
