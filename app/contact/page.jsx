@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/select";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from 'react-icons/fa';
 import { motion } from "framer-motion";
+import Map from "@/components/GoogleMaps";
 
 const info = [
     {
@@ -125,7 +126,7 @@ const Contact = () => {
                         <form onSubmit={handleSubmit} className="flex flex-col gap-6 p-10 bg-slate-100 rounded-xl">
                             <h3 className="text-4xl text-accent">Let's Connect!</h3>
                             <p className="text-primary/70 dark:text-white">
-                            Let’s build something amazing together! Whether it’s a website or a front-end project, I’m here to bring your ideas to life.
+                                Let’s build something amazing together! Whether it’s a website or a front-end project, I’m here to bring your ideas to life.
                             </p>
 
                             {/* Status message */}
@@ -223,6 +224,12 @@ const Contact = () => {
                                     </div>
                                 </div>
                             ))}
+                            <div>
+                                <h3>Here i am!</h3>
+                                <div>
+                                    <Map />
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </div>

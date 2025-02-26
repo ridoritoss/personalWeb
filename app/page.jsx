@@ -112,8 +112,8 @@ const Home = () => {
                     className="uppercase flex items-center gap-2"
                   >
                     <Link
-                      href="/assets/Home/AlfiRidhaCV.pdf"
-                      download="AlfiRidhaCV.pdf"
+                      href="/assets/Home/alfi-ridha-m-CV.pdf"
+                      download="alfi-ridha-m-CV.pdf"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
