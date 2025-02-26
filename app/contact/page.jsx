@@ -17,7 +17,6 @@ import {
 } from "@/components/ui/select";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt } from 'react-icons/fa';
 import { motion } from "framer-motion";
-import Map from "@/components/GoogleMaps";
 
 const info = [
     {
@@ -224,12 +223,6 @@ const Contact = () => {
                                     </div>
                                 </div>
                             ))}
-                            <div>
-                                <h3>Here i am!</h3>
-                                <div>
-                                    <Map />
-                                </div>
-                            </div>
                         </ul>
                     </div>
                 </div>
