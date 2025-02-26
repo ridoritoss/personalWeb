@@ -87,6 +87,18 @@ const projects = [
         github: "https://github.com/AbdulRidhoRamadhan/banter-Social-Media",
         page: ""
     },
+    {
+        num: "05",
+        title: "Visualt Web Design",
+        category: "UI Design",
+        description: "A clean and minimalist web platform showcasing creative works with an intuitive user experience.",
+        stack: [
+            { name: "Figma" }
+        ],
+        image: "/assets/MyProject/Preview-visualt.jpg",
+        github: "",
+        page: "https://www.figma.com/design/jwYhr0EhLLYyFqj4rHPJ4a/visu.alt-web?node-id=0-1&t=QGYfzvCvCPpQqFnY-1"
+    },
 ]
 
 const Projects = () => {
