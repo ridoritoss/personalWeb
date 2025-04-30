@@ -21,7 +21,7 @@ export const education = {
     items: [
         { school: 'Hacktiv8 Indonesia', degree: 'Fullstack JavaScript Web Developer', duration: 'July 2024 - December 2024' },
         { school: "Ma'had Dhiyyaus Sunnah Cirebon", degree: 'Islamic Boarding School', duration: '2015 - 2022' },
-        { school: "MySkills Academy", degree: 'UI/UX Design Online Course', duration: 'Summer 2023' },
+        { school: "Coding Studio Academy", degree: 'UI/UX Design Online Course', duration: 'Summer 2023' },
     ]
 };
 
