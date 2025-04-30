@@ -49,8 +49,8 @@ export const certificates = {
     description: "I have taken several online courses and bootcamps to improve my skills. Here are some of the certificates I have earned:",
     items: [
         { name: 'Software Engineer Development', issuer: 'Hacktiv8 Indonesia', duration: 'July 2024 - December 2024', image: "/assets/Certificate/Hacktiv8.png" },
-        { name: 'Fundamental UX Design', issuer: 'MySkills Academy', duration: 'Summer 2023', image: "/assets/Certificate/FundamentalUX.png" },
-        { name: 'Fundamental UI Design', issuer: 'MySkills Academy', duration: 'Summer 2023', image: "/assets/Certificate/FundamentalUI.png" },
+        { name: 'Fundamental UX Design', issuer: 'Coding Studio Academy', duration: 'Summer 2023', image: "/assets/Certificate/FundamentalUX.png" },
+        { name: 'Fundamental UI Design', issuer: 'Coding Studio Academy', duration: 'Summer 2023', image: "/assets/Certificate/FundamentalUI.png" },
         { name: 'Javascript Certificate', issuer: 'HackerRank', duration: 'November 2022', image: "/assets/Certificate/Javascript.png" },
         { name: 'CSS Certificate', issuer: 'HackerRank', duration: 'November 2022', image: "/assets/Certificate/CSS.png" },
         { name: 'Problem Solving Certificate', issuer: 'HackerRank', duration: 'November 2022', image: "/assets/Certificate/ProblemSolving.png" },
