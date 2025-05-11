@@ -35,12 +35,6 @@ const services = [
         description: "I can build you a mobile app using React Native that is fast, responsive, and user-friendly.",
         href: "",
     },
-    {
-        num: "06",
-        title: "SEO Optimization",
-        description: "I can optimize your website for search engines to help you rank higher and get more traffic.",
-        href: "",
-    },
 ];
 
 const Services = () => {
