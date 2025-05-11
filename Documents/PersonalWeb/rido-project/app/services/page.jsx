@@ -23,6 +23,24 @@ const services = [
         description: "I can build you a modern, interactive frontend using the latest technologies like React, Next.js, and Tailwind CSS.",
         href: "",
     },
+    {
+        num: "04",
+        title: "Design Graphic",
+        description: "I can create stunning graphics for your website, social media, or any other platform. I specialize in Figma.",
+        href: "",
+    },
+    {
+        num: "05",
+        title: "Mobile Development",
+        description: "I can build you a mobile app using React Native that is fast, responsive, and user-friendly.",
+        href: "",
+    },
+    {
+        num: "06",
+        title: "SEO Optimization",
+        description: "I can optimize your website for search engines to help you rank higher and get more traffic.",
+        href: "",
+    },
 ];
 
 const Services = () => {
